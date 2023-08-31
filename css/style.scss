@@ -573,7 +573,10 @@ header{
 
 footer{
   background: var(--secondary-1, #FF6C0D);
-
+  margin-top: 9.6875rem;
+  @media (max-width: 768px) {
+    margin-top: 6.6875rem;
+  }
       .inner{
         position: relative;
         display: flex;
@@ -625,3 +628,57 @@ footer{
 
 
 }
+
+
+
+//... .. .... .........Sale.html
+
+.filter{
+  margin-top: 145px;
+ @media (max-width: 992px) {
+   margin-top: 195px;
+ }
+
+.inner{
+  display: flex;
+  justify-content: space-between;
+  .buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .btn-filter{
+      display: flex;
+      cursor: pointer;
+      padding: 4px 24px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      border-radius: 15px;
+      border: 1px solid rgba(0, 0, 0, 0.50);
+      color: rgba(0, 0, 0, 0.75);
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: normal;
+      margin-right: 15px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  .btn-orange{
+    padding: 8px 48px;
+    margin-bottom: 10px;
+  }
+}
+
+}
+
+
+//.......... products Sale{
+
+.products-sale{
+  margin-top: 2.5rem;
+}
+
+
+//................... Sale.html
