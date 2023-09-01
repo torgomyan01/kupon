@@ -25,3 +25,24 @@ const menu_ItemMobile = document.querySelector('.menu-item-mobile');
 menu_item_mobile_teg.addEventListener('click', function (){
     menu_ItemMobile.classList.remove(active);
 })
+
+
+new Splide( '.splide', {
+    type   : 'loop',
+    perPage: 7,
+    pagination: false,
+    breakpoints: {
+        1100: {
+            perPage: 5,
+        },
+        768: {
+            perPage: 3,
+        },
+        500: {
+            perPage: 2,
+        },
+        400: {
+            perPage: 1,
+        },
+    }
+} ).mount();
