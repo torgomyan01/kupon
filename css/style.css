@@ -929,7 +929,7 @@ footer .inner .footer-text .footer-text-item a {
   background: #FFF;
 }
 .tab .tab-pane {
-  margin-top: 3.75rem;
+  margin-top: 1.75rem;
 }
 @media (max-width: 576px) {
   .tab .tab-pane {
