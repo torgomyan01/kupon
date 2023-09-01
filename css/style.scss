@@ -586,7 +586,9 @@ footer{
         @media (max-width: 576px) {
           flex-wrap: wrap;
           flex-direction: column;
-          justify-content: center;
+          justify-content: left;
+          align-items: start;
+          padding-left: 20px;
         }
         .footer-logo{
           position: absolute;
@@ -604,9 +606,8 @@ footer{
           display: flex;
           align-items: center;
           @media (max-width: 576px) {
-            margin-left: 60px;
             margin-top: 10px;
-            justify-content: center;
+            justify-content: start;
             flex-wrap: wrap;
             flex-direction: column;
             align-items: unset;
@@ -642,14 +643,21 @@ footer{
 .inner{
   display: flex;
   justify-content: space-between;
+  @media (max-width: 992px) {
+    align-items: start;
+  }
   .buttons{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    @media (max-width: 992px) {
+        flex-direction: column;
+          align-items: unset;
+    }
     .btn-filter{
       display: flex;
       cursor: pointer;
-      padding: 4px 24px;
+      padding: 0.25rem 1.5rem;
       justify-content: center;
       text-align: center;
       align-items: center;
@@ -659,9 +667,17 @@ footer{
       font-size: 1rem;
       font-weight: 500;
       line-height: normal;
-      margin-right: 15px;
+      margin-right: 0.9375rem;
+      @media (max-width: 992px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
       &:last-child{
         margin-right: 0;
+      }
+      &.active{
+        background: #4A4542;
+        color: #fff;
       }
     }
   }
@@ -682,3 +698,11 @@ footer{
 
 
 //................... Sale.html
+
+
+
+//............ Product
+
+
+
+// ............ Product End
