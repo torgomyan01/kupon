@@ -119,14 +119,16 @@
     <div class="row">
 
       <div class="col-md-7 col-12">
-        <div style="background-image: url('./images/product-header-slider.png')" class="image">
+        <div style="background-image: url('./images/product-header-slider.png')" class="image product-image-block"
+             data-images="https://picsum.photos/800/800?random=1,https://picsum.photos/800/800?random=2,https://picsum.photos/800/800?random=3,https://picsum.photos/800/800?random=4,https://picsum.photos/800/800?random=5,https://picsum.photos/800/800?random=6
+">
           <button class="arrows-up-down">
             <i class="fa-sharp fa-light fa-arrows-up-down"></i>
           </button>
-          <button class="left">
+          <button class="left" id="prev">
             <i class="fa-regular fa-chevron-left"></i>
           </button>
-          <button class="right">
+          <button class="right" id="next">
             <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
@@ -178,10 +180,10 @@
 <section class="tab">
   <div class="container">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item me-md-3 me-2" role="presentation">
+      <li class="nav-item me-md-3 me-2 mb-2" role="presentation">
         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Նկարագրություն</button>
       </li>
-      <li class="nav-item" role="presentation">
+      <li class="nav-item mb-2"" role="presentation">
         <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Հասցե</button>
       </li>
     </ul>

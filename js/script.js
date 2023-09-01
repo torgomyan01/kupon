@@ -26,23 +26,61 @@ menu_item_mobile_teg.addEventListener('click', function (){
     menu_ItemMobile.classList.remove(active);
 })
 
+const sliders = document.querySelectorAll('.splide');
 
-new Splide( '.splide', {
-    type   : 'loop',
-    perPage: 7,
-    pagination: false,
-    breakpoints: {
-        1100: {
-            perPage: 5,
-        },
-        768: {
-            perPage: 3,
-        },
-        500: {
-            perPage: 2,
-        },
-        400: {
-            perPage: 1,
-        },
+if(sliders.length){
+    new Splide( '.splide', {
+        type   : 'loop',
+        perPage: 7,
+        pagination: false,
+        breakpoints: {
+            1100: {
+                perPage: 5,
+            },
+            768: {
+                perPage: 3,
+            },
+            500: {
+                perPage: 2,
+            },
+            400: {
+                perPage: 1,
+            },
+        }
+    } ).mount();
+}
+
+
+
+const imagesSliderProductBlock = document.querySelector('.product-image-block');
+
+const ArrImagesUrl = imagesSliderProductBlock.dataset.images.split(',')
+let sliderCount = 0;
+
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+
+prev.addEventListener('click', function (){
+    if(sliderCount === 0){
+        sliderCount = ArrImagesUrl.length;
     }
-} ).mount();
+    sliderCount--;
+
+    imagesSliderProductBlock.style.backgroundImage = `url(${ArrImagesUrl[sliderCount]})`;
+
+})
+
+next.addEventListener('click', function (){
+    if(sliderCount === ArrImagesUrl.length - 1){
+        sliderCount = 0;
+    }
+    sliderCount++;
+    console.log(sliderCount)
+
+    imagesSliderProductBlock.style.backgroundImage = `url(${ArrImagesUrl[sliderCount]})`;
+
+})
+
+
+console.log(ArrImagesUrl)
+

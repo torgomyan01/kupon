@@ -747,6 +747,10 @@ footer{
     background-repeat: no-repeat;
     border-radius: 15px;
     position: relative;
+    transition: 0.3s;
+    @media (max-width: 768px) {
+      height: 300px;
+    }
     .arrows-up-down{
       background: transparent;
       position: absolute;
@@ -793,7 +797,13 @@ footer{
   .box{
     width: 100%;
     height: 100%;
+    @media (max-width: 768px) {
+      padding-left: .4rem;
+    }
     .title{
+      @media (max-width: 768px) {
+        margin-top: 1.3rem;
+      }
       h3{
         color: #000;
         font-size: 1.125rem;
@@ -809,6 +819,9 @@ footer{
         font-size: 1.5rem;
         font-weight: 500;
         margin-top: 26px;
+        @media (max-width: 768px) {
+          font-size: 1.3rem;
+        }
       }
     }
     .buttons{
@@ -816,6 +829,9 @@ footer{
       flex-wrap: wrap;
       margin-top: .7rem;
       gap: 10px;
+      @media (max-width: 768px) {
+        margin-top: 1rem
+      }
       .btn-gray{
         display: flex;
         padding: 4px 12px;
@@ -826,6 +842,9 @@ footer{
         color: rgba(0, 0, 0, 0.60);
         font-size: 1.25rem;
         font-weight: 500;
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
       }
     }
     .price-box {
@@ -834,7 +853,7 @@ footer{
       justify-content: space-between;
       align-items: center;
       @media (max-width: 768px) {
-        margin-top: 5rem;
+        padding-top: 2rem;
       }
       .icons{
         display: flex;
@@ -943,6 +962,9 @@ footer{
     }
   .tab-pane{
     margin-top: 3.75rem;
+    @media (max-width: 576px) {
+      margin-top: 2.2rem;
+    }
     p{
       color: #000;
       font-size: 1.125rem;
