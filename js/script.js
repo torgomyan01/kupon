@@ -84,3 +84,14 @@ next.addEventListener('click', function (){
 
 console.log(ArrImagesUrl)
 
+const modalImage = document.querySelector('.modal-body .image')
+const btnOpenImg = document.querySelector('.arrows-up-down')
+const myModal = new bootstrap.Modal(document.getElementById('myModal'), {
+    keyboard: false
+})
+
+
+btnOpenImg.addEventListener('click', ()=>{
+    myModal.show()
+        modalImage.style.backgroundImage = `url(${ArrImagesUrl[sliderCount]})`;
+})

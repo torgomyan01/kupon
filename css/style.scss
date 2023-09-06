@@ -1017,3 +1017,18 @@ footer{
     left: 0 !important;
   }
 }
+
+
+
+//.  Modal body
+
+
+.modal-body{
+  .image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 80%;
+  }
+}
